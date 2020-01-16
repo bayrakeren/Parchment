@@ -40,6 +40,7 @@ open class PagingTitleCell: PagingCell {
   open func configure() {
     contentView.addSubview(titleLabel)
     contentView.isAccessibilityElement = true
+    titleLabel.numberOfLines = 2
   }
   
   open override func layoutSubviews() {
